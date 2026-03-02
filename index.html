@@ -38,7 +38,7 @@
 
         <section id="menu" class="menu">
            <div class="container">
-                <h2 class="section-title">Our Menu</h2>
+                <h2 class="section-title ">Our Menu</h2>
                 <p class="section-subtitle">Discover our carefully crafted dishes </p>
                 <div class="menu-categories">
                     <div class="menu-category">
@@ -66,7 +66,7 @@
 
         <section id="about" class="about">
             <div class="container">
-                <h2 class="section-title">About bella Vista</h2>
+                <h2 class="section-title ">About bella Vista</h2>
                 <div class="about-content">
                     <div class="about-text">
                         <h3>Our Story</h3>
@@ -77,7 +77,84 @@
                     <img src="image/about-img.avif" alt="Restaurant Interier">
                 </div>
                 </div>
+            </div>
+        </section>
 
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title ">Contact Us</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Get in Touch</h3>
+
+                        <div class="contact-item">
+                            <strong>Address:</strong>
+                            <p>123 Italian street, City Center, NY 10001</p>
+                        </div>
+                        <div>    
+                            <Strong>Phone:</Strong>
+                            <p>(555)123-4567</p>
+                        </div>
+                        <div>  
+                            <Strong>Email:</Strong>
+                            <p>info@bellavista.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-form">
+                        <h3>Make a Reservation</h3>
+                        <form action="">
+                            <div class="form-grp">
+                                <label for="name">Full Name:</label>
+                                <input type="text" name="name" id="name" required>
+                            </div>
+
+                            <div class="form-grp">
+                                <label for="name">Email:</label>
+                                <input type="email" name="email" id="email" required>
+                            </div>
+
+                            <div class="form-grp">
+                                <label for="name">Phone:</label>
+                                <input type="tel" name="phone" id="phone" required>
+                            </div>
+
+                            <div class="form-grp">
+                                <label for="name">Reservation Date:</label>
+                                <input type="date" name="date" id="date" required>
+                            </div>
+
+                            <div class="form-grp">
+                                <label for="name">Time:</label>
+                                <select name="time" id="time" required>
+                                    <option value="">Select Time</option>
+                                    <option value="18:00">6:00 PM</option>
+                                     <option value="19:00">7:00 PM</option>
+                                      <option value="20:00">8:00 PM</option>
+                                </select>
+                            </div>
+
+                           <div class="form-grp">
+                                <label for="name">Number of Guests:</label>
+                                <select name="guests" id="guests" required>
+                                    <option value="">Select guests</option>
+                                    <option value="1">1 Guest</option>
+                                    <option value="2">2 Guest</option>
+                                    <option value="3">3 Guest</option>
+                                    <option value="4">4 Guest</option>
+                                    <option value="5+">5+ Guest</option>
+                                </select>
+                            </div>
+
+                            <div class="form-grp">
+                                <label for="message">Special Requests:</label>
+                                <textarea name="message" id="message" rows="4" placeholder="Any special dietary requirements or requests..."></textarea>
+                            </div>
+                                <button type="submit" class="btn btn-primary">Submit Reservation</button>
+                        </form>
+                                
+                    </div>
+                </div>   
             </div>
         </section>
     </main>
