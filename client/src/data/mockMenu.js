@@ -1,0 +1,145 @@
+// Seed data shaped exactly like the future MongoDB `MenuItem` documents:
+// { _id, title, description, price, category, image, isAvailable, isChefSpecial }
+// so swapping the mock service for a real axios call later needs zero UI changes.
+
+let menuItems = [
+  {
+    _id: 'm1',
+    title: 'Bruschetta Italiana',
+    description: 'Fresh tomatoes, basil, and mozzarella on toasted artisan bread',
+    price: 12,
+    category: 'Appetizers',
+    image: 'https://images.unsplash.com/photo-1572695157366-5e585ab2b69f?w=600&q=80',
+    isAvailable: true,
+    isChefSpecial: false,
+  },
+  {
+    _id: 'm2',
+    title: 'Antipasto Platter',
+    description: 'Selection of cured meats, artisan cheese and marinated vegetables',
+    price: 18,
+    category: 'Appetizers',
+    image: 'https://images.unsplash.com/photo-1626200419199-391ae4be7a41?w=600&q=80',
+    isAvailable: true,
+    isChefSpecial: false,
+  },
+  {
+    _id: 'm3',
+    title: 'Calamari Fritti',
+    description: 'Crispy fried calamari served with a zesty marinara dip',
+    price: 15,
+    category: 'Appetizers',
+    image: 'https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=600&q=80',
+    isAvailable: true,
+    isChefSpecial: false,
+  },
+  {
+    _id: 'm4',
+    title: 'Spaghetti Carbonara',
+    description: 'Egg, pecorino, guanciale and cracked black pepper — the Roman classic',
+    price: 22,
+    category: 'Main Course',
+    image: 'https://images.unsplash.com/photo-1612874742237-6526221588e3?w=600&q=80',
+    isAvailable: true,
+    isChefSpecial: true,
+  },
+  {
+    _id: 'm5',
+    title: 'Margherita Pizza',
+    description: 'Wood-fired with San Marzano tomato, fior di latte and fresh basil',
+    price: 19,
+    category: 'Main Course',
+    image: 'https://images.unsplash.com/photo-1604068549290-dea0e4a305ca?w=600&q=80',
+    isAvailable: true,
+    isChefSpecial: true,
+  },
+  {
+    _id: 'm6',
+    title: 'Osso Buco',
+    description: 'Braised veal shank with saffron risotto and gremolata',
+    price: 34,
+    category: 'Main Course',
+    image: 'https://images.unsplash.com/photo-1544025162-d76694265947?w=600&q=80',
+    isAvailable: true,
+    isChefSpecial: false,
+  },
+  {
+    _id: 'm7',
+    title: 'Fettuccine Alfredo',
+    description: 'Silky parmesan cream sauce tossed with fresh fettuccine',
+    price: 21,
+    category: 'Main Course',
+    image: 'https://images.unsplash.com/photo-1645112411341-6c4fd023714a?w=600&q=80',
+    isAvailable: false,
+    isChefSpecial: false,
+  },
+  {
+    _id: 'm8',
+    title: 'Tiramisu',
+    description: 'Espresso-soaked ladyfingers layered with mascarpone cream',
+    price: 10,
+    category: 'Desserts',
+    image: 'https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=600&q=80',
+    isAvailable: true,
+    isChefSpecial: true,
+  },
+  {
+    _id: 'm9',
+    title: 'Panna Cotta',
+    description: 'Silky vanilla bean custard with a fresh berry compote',
+    price: 9,
+    category: 'Desserts',
+    image: 'https://images.unsplash.com/photo-1488477181946-6428a0291777?w=600&q=80',
+    isAvailable: true,
+    isChefSpecial: false,
+  },
+  {
+    _id: 'm10',
+    title: 'Cannoli Siciliani',
+    description: 'Crisp pastry shells filled with sweet ricotta and candied fruit',
+    price: 11,
+    category: 'Desserts',
+    image: 'https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?w=600&q=80',
+    isAvailable: true,
+    isChefSpecial: false,
+  },
+  {
+    _id: 'm11',
+    title: 'Italian Espresso',
+    description: 'Rich, bold single-origin espresso pulled to order',
+    price: 4,
+    category: 'Beverages',
+    image: 'https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?w=600&q=80',
+    isAvailable: true,
+    isChefSpecial: false,
+  },
+  {
+    _id: 'm12',
+    title: 'Chianti Classico',
+    description: 'A glass of full-bodied Tuscan red wine',
+    price: 13,
+    category: 'Beverages',
+    image: 'https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=600&q=80',
+    isAvailable: true,
+    isChefSpecial: false,
+  },
+  {
+    _id: 'm13',
+    title: 'Aperol Spritz',
+    description: 'Aperol, prosecco and soda over ice with an orange twist',
+    price: 12,
+    category: 'Beverages',
+    image: 'https://images.unsplash.com/photo-1560512823-829485b8bf24?w=600&q=80',
+    isAvailable: true,
+    isChefSpecial: false,
+  },
+];
+
+export const CATEGORIES = ['All', 'Appetizers', 'Main Course', 'Desserts', 'Beverages'];
+
+export const getMenuStore = () => menuItems;
+export const setMenuStore = (next) => {
+  menuItems = next;
+};
+
+export default menuItems;
